@@ -13,3 +13,5 @@ The user can also choose to include the current date.
 
 ## Examples
 Depending on the options chosen, this is what the pasted selection will look like:
+
+![Examples](images/examples.jpg "some examples")
