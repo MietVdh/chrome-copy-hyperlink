@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Copy Hyperlink Options</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/scripts/bootstrap.bundle.min.js"></script>
+    <style>
+      html {
+        min-width: 300px;
+        min-height: 100px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main class="p-3 container">
+      <form id="optionsForm">
+        <div class="mb-1 row form-check form-switch">
+        <label class="form-check-label" for="heading">
+          <input class="form-check-input" type="checkbox" role="switch" name="heading" id="heading">
+          Use heading when available
+        </label>
+        </div>
+        <div class="mb-1 row form-check form-switch">
+        <label class="form-check-label" for="date">
+          <input class="form-check-input" type="checkbox" role="switch" name="date" id="date">
+          Add date
+        </label>
+        </div>
+        <div class="row justify-content-center p-2">
+          <div class="col-4">
+            <button class="col-sm-4 btn btn-primary" id="confirm">OK</button>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script src="options.js"></script>
+  </body>
+</html>

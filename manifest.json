@@ -1,0 +1,41 @@
+{
+    "manifest_version": 3,
+    "name": "Copy Source Hyperlink",
+    "version": "0.0.0.1",
+    "description": "Copy selected text with hyperlink to web page url",
+    "background": {
+        "service_worker": "scripts/background.js"
+        },
+    "permissions": [
+        "contextMenus",
+        "storage",
+        "activeTab",
+        "scripting"
+      ],
+    "icons": {
+    "32": "icons/icon-32.png",
+    "128": "icons/icon-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["scripts/content.js"]
+        }
+        ],
+    "options_ui": {
+        "page": "options/options.html",
+        "open_in_tab": false
+        },
+    "action": {
+        "default_title": "Click to copy hyperlink"
+    },
+    "commands": {
+        "copy-selection-hyperlink": {
+          "suggested_key": {
+            "default": "Ctrl+B",
+            "mac": "Command+B"
+            },
+          "description": "Copy the selected text with hyperlink"
+        }
+      }
+}
